@@ -41,10 +41,10 @@ time as you type.
 The properties are:
  - `color` (or `c`): the color of the icon.
  - `background` (or `b`): a comma-separated list of colors for the background.
- - `angle` (or `a`): andle of the background gradient in degrees: 0 for top to
+ - `angle` (or `a`): angle of the background gradient in degrees: 0 for top to
    bottom, 90 for left to right.
  - `radius` (or `r`): relative radius of icon corners: 0 for sharp corners, 100
-   to make a circlular icon.
+   to make a circular icon.
  - `size` (or `s`): percentage of icon size to the background size.
 
 The colors can be any valid CSS color keyword, or hex color code.
