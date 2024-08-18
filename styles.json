@@ -1,0 +1,82 @@
+[
+  {
+    "name": "ocean",
+    "background": [
+      "#68aeff",
+      "#003eb7"
+    ],
+    "angle": 90
+  },
+  {
+    "name": "rainbow",
+    "background": [
+      "#77be1a",
+      "#ffc823",
+      "#ff6614",
+      "#d00527",
+      "#b215ad",
+      "#00a2df"
+    ],
+    "angle": 90
+  },
+  {
+    "name": "sunset",
+    "size": 62.5,
+    "color": "#a00",
+    "background": [
+      "#feb47b",
+      "#ff7e5f"
+    ],
+    "angle": 90
+  },
+  {
+    "name": "peach",
+    "background": [
+      "#eaafc8",
+      "#ec2f4b"
+    ],
+    "angle": 45
+  },
+  {
+    "name": "forest",
+    "background": [
+      "#1d6e47",
+      "#041b11"
+    ],
+    "radius": 100
+  },
+  {
+    "name": "blood",
+    "size": 33.3,
+    "color": "#eeccc2",
+    "background": [
+      "#dd1818",
+      "#380202"
+    ],
+    "radius": 100
+  },
+  {
+    "name": "black and white",
+    "color": "white",
+    "background": [
+      "black"
+    ],
+    "radius": 0.0
+  },
+  {
+    "name": "solidarity",
+    "color": "#005bbb",
+    "background": [
+      "#ffd500"
+    ],
+    "radius": 0.0
+  },
+  {
+    "name": "regal",
+    "color": "gold",
+    "background": [
+      "purple"
+    ],
+    "radius": 75.0
+  }
+]
