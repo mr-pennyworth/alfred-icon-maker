@@ -17,7 +17,7 @@ curl -sL https://raw.githubusercontent.com/mr-pennyworth/alfred-icon-maker/main/
 Along with the workflow, the script above installs:
  - [AlfredExtraPane](https://github.com/mr-pennyworth/alfred-extra-pane):
    for showing the icons being generated (in SVG format) in Alfred.
- - [Inkscape](https://inkscape.org/): for generating the icons as PNGs.
+ - [LibRsvg](https://wiki.gnome.org/Projects/LibRsvg): for generating the icons as PNGs.
 
 ## Usage
 Search for the SF Symbol you want to use. Icon maker will list all matching
