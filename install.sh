@@ -19,9 +19,6 @@ if [ ! -d "$EXTRA_PANE_APP" ]; then
   curl -sL "$EXTRA_PANE_INSTALL_SCRIPT" | sh
 fi
 
-# If Inkscape is not installed, install it
-brew install --cask inkscape
-
 # Download the workflow code
 curl -sL "$WORKFLOW_ZIP" -o "/tmp/$NAME.zip"
 
