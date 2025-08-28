@@ -17,7 +17,7 @@ curl -sL https://raw.githubusercontent.com/mr-pennyworth/alfred-icon-maker/main/
 Along with the workflow, the script above installs:
  - [AlfredExtraPane](https://github.com/mr-pennyworth/alfred-extra-pane):
    for showing the icons being generated (in SVG format) in Alfred.
- - [Inkscape](https://inkscape.org/): for generating the icons as PNGs.
+ - [LibRsvg](https://wiki.gnome.org/Projects/LibRsvg): for generating the icons as PNGs.
 
 ## Usage
 Search for the SF Symbol you want to use. Icon maker will list all matching
@@ -58,21 +58,7 @@ or by dragging and dropping the icon. You can overwrite the style by pressing
 `option-enter` (`⌥↩`), or create a new style by pressing `command-enter` (`⌘↩`).
 
 ## Notes on SVG to PNG conversion
-We rely on Inkscape to convert SVGs to PNGs:
- - ImageMagick wasn't able to produce transparent backgrounds correctly.
- - `librsvg` has a [known bug](https://gitlab.gnome.org/GNOME/librsvg/-/issues/414)
-   where it can not handle the `dominant-baseline` of `text` SVG elements
-   correctly. Without this, there is no way to vertically align text at the
-   center of the icon. The suggested workaround of setting `dy="0.25em"` works
-   only when the font size is exactly half of the icon size.
- - ChatGPT and Claude weren't able to correctly write a swift program that would
-   load the SVG inside a `WKWebView` and then take a screenshot. The PNGs didn't
-   have the correct dimensions, didn't have transparent background, and in some
-   cases, didn't use the "SF Pro" font (essential for rendering SF Symbols)
-   either.
-   - Since `AlfredExtraPane` is able to correctly render the SVGs, it certainly
-     seems possible to get the `WKWebView` approach to work. In the future, if
-     we want to stop depending on Inkscape, we should revisit this.
+We rely on `librsvg` to convert SVGs to PNGs.
 
 ## Related
  - [Alfred Icon Generator](https://github.com/NeighNeighNeigh/Alfred_IconGenerator)

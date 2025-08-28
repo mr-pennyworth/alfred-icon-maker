@@ -224,10 +224,12 @@ def svg2png(svgpath: str) -> str:
         # Use Popen, and not run or call, to avoid blocking
         subprocess.Popen(
             [
-                "inkscape",
-                "--export-type=png",
+                "rsvg-convert",
+                "-f",
+                "png",
+                "-o",
+                outpath,
                 svgpath,
-                "--export-filename=" + outpath,
             ]
         )
     else:
